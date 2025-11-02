@@ -48,17 +48,20 @@ export default function App() {
           transition: "background-position 0.05s linear",
         }}
       />
-
       <main className="text-white min-h-screen flex flex-col items-center">
         <div className="w-3/4 py-10">
           <Header />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
             {shuffledLyrics.map((item, i) => (
-              <LyricCard key={i} {...item} />
+              <div key={i} className="break-inside-avoid mb-6">
+                <LyricCard {...item} />
+              </div>
             ))}
           </div>
         </div>
       </main>
+
     </div>
   );
 }
