@@ -21,7 +21,7 @@ export const lyrics: LyricItem[] = [
     artist: "J. Cole",
   },
   {
-    lyric: `Uncle said, "Nigga, you must be sick \n All you talk about jus just gettin' rich"`,
+    lyric: `Uncle said, "Nigga, you must be sick \n All you talk about is just gettin' rich"`,
     song: "Chains & Whips",
     artist: "Clipse, Kendrick Lamar",
   },
@@ -52,7 +52,7 @@ export const lyrics: LyricItem[] = [
   },
   {
     lyric: `She deserved that, she a bird, it's a bird trap \n You think if I didn't rap she would flirt back?`,
-    song: "No ROle Modelz",
+    song: "No Role Modelz",
     artist: "J. Cole",
   },
   {
