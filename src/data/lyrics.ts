@@ -101,11 +101,6 @@ export const lyrics: LyricItem[] = [
     artist: "Kendrick Lamar",
   },
   {
-    lyric: `Chivalry ain't dead, you ain't let her go alone`,
-    song: "The Birds Don't Sing",
-    artist: "Clipse, John Legend",
-  },
-  {
     lyric: `The way you missed Mama, I guess I should've known \n Chivalry ain't dead, you ain't let her go alone`,
     song: "The Birds Don't Sing",
     artist: "Clipse, John Legend",
