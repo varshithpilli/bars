@@ -17,14 +17,19 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
   useEffect(() => {
     async function fetchCoverAndExtractColors() {
       try {
-        // const res = await fetch(
-        //   `https://itunes.apple.com/search?term=${encodeURIComponent(
-        //     song + " " + artist
-        //   )}&entity=song&limit=1`
-        // );
         const res = await fetch(
-  `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${encodeURIComponent(song + " " + artist)}&entity=song&limit=1`
-);
+          `https://itunes.apple.com/search?term=${encodeURIComponent(
+            song + " " + artist
+          )}&entity=song&limit=1`
+        );
+//         const res = await fetch(
+//   `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${encodeURIComponent(song + " " + artist)}&entity=song&limit=1`
+// );
+// const res = await fetch(
+//   `https://open.spotify.com/oembed?url=https://open.spotify.com/search/${encodeURIComponent(
+//     song + " " + artist
+//   )}`
+// );
         const data = await res.json();
         if (data.results?.[0]?.artworkUrl100) {
           const coverUrl = data.results[0].artworkUrl100.replace(

@@ -36,9 +36,39 @@ export const lyrics: LyricItem[] = [
     artist: "Kendrick Lamar",
   },
   {
+    lyric: `What is a woman that really hurt? \n A demon, you're better off killin' her`,
+    song: "United In Grief",
+    artist: "Kendrick Lamar",
+  },
+  {
+    lyric: `What is a house with a better view? \n A family broken in variable`,
+    song: "United In Grief",
+    artist: "Kendrick Lamar",
+  },
+  {
+    lyric: `I can't sugarcoat the answer for you, this is how I feel \n If somebody kill my son, that mean somebody gettin' killed`,
+    song: "XXX.",
+    artist: "Kendrick Lamar",
+  },
+  {
+    lyric: `She deserved that, she a bird, it's a bird trap \n You think if I didn't rap she would flirt back?`,
+    song: "No ROle Modelz",
+    artist: "J. Cole",
+  },
+  {
     lyric: `I had a dream I could buy my way to Heaven \n When I awoke, I spent that on a necklace`,
     song: "Can't Tell Me Nothing",
     artist: "Kanye West",
+  },
+  {
+    lyric: `Did you realize that you were a champion in their eyes? \n Yes, I did`,
+    song: "Champion",
+    artist: "Kanye West",
+  },
+  {
+    lyric: `Niggas tend to get rich and they act weird \n How you walkin' out the party with your butt pierced?`,
+    song: "Thought I Was Dead",
+    artist: "Tyler, The Creator",
   },
   {
     lyric: `And I wonder if you know \n What it means to find your dreams`,
@@ -63,6 +93,11 @@ export const lyrics: LyricItem[] = [
   {
     lyric: `And if I gotta brown-nose for some gold \n Then I'd rather be a bum than a motherfuckin' baller`,
     song: "King Kunta",
+    artist: "Kendrick Lamar",
+  },
+  {
+    lyric: `You killed my cousin back in '94, fuck your truce`,
+    song: "m.A.A.d city",
     artist: "Kendrick Lamar",
   },
   {
