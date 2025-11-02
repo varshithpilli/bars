@@ -11,6 +11,11 @@ export const lyrics: LyricItem[] = [
     artist: "Clipse, Kendrick Lamar",
   },
   {
+    lyric: `To all my young niggas, let me be the demonstration \n How to conduct differences with a healthy conversation \n If that's your family, then handle it as such \n Don't let the socials gas you up or let emotions be your crutch`,
+    song: "heart pt. 6",
+    artist: "Kendrick Lamar",
+  },
+  {
     lyric: `If I had her, then you had her, she never mattered`,
     song: "So Be it",
     artist: "Clipse",
