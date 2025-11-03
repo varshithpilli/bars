@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import ColorThief from "colorthief";
 // ⚡ ADD:
-import * as htmlToImage from "html-to-image";
+// import * as htmlToImage from "html-to-image";
 
 interface LyricCardProps {
   lyric: string;
