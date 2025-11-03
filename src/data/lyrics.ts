@@ -21,6 +21,21 @@ export const lyrics: LyricItem[] = [
     artist: "Clipse",
   },
   {
+    lyric: `Let it happen`,
+    song: "Let It Happen",
+    artist: "Tame Impala",
+  },
+  {
+    lyric: `I was doin' fine without you \n 'Til I saw your face, now I can't erase`,
+    song: "The Less I Know The Better",
+    artist: "Tame Impala",
+  },
+  {
+    lyric: `I almost cut a piece of myself for your life \n Guess I was just another pit stop \n 'Til you made up your mind`,
+    song: "Call Out My Name",
+    artist: "The Weeknd",
+  },
+  {
     lyric: `The good news is nigga you came a long way \n The bad news is nigga you went the wrong way`,
     song: "Love Yourz",
     artist: "J. Cole",

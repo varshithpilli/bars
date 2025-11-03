@@ -17,7 +17,7 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   // ⚡ ADD: ref for the card itself
-  const cardRef = useRef<HTMLDivElement>(null);
+  // const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     async function fetchCoverAndExtractColors() {
@@ -102,25 +102,25 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
   )}`;
 
   // ⚡ ADD: function to download as image
-  const handleDownload = async (e: React.MouseEvent) => {
-    e.preventDefault(); // prevent link navigation
-    if (!cardRef.current) return;
+  // const handleDownload = async (e: React.MouseEvent) => {
+  //   e.preventDefault(); // prevent link navigation
+  //   if (!cardRef.current) return;
 
-    try {
-      const dataUrl = await htmlToImage.toPng(cardRef.current, {
-        quality: 1,
-        backgroundColor: "#000",
-        pixelRatio: 2,
-      });
+  //   try {
+  //     const dataUrl = await htmlToImage.toPng(cardRef.current, {
+  //       quality: 1,
+  //       backgroundColor: "#000",
+  //       pixelRatio: 2,
+  //     });
 
-      const link = document.createElement("a");
-      link.download = `${song}-${artist}.png`;
-      link.href = dataUrl;
-      link.click();
-    } catch (err) {
-      console.error("Failed to export card:", err);
-    }
-  };
+  //     const link = document.createElement("a");
+  //     link.download = `${song}-${artist}.png`;
+  //     link.href = dataUrl;
+  //     link.click();
+  //   } catch (err) {
+  //     console.error("Failed to export card:", err);
+  //   }
+  // };
 
   return (
     <a
@@ -128,10 +128,10 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
       target="_blank"
       rel="noopener noreferrer"
       // ⚡ ADD: Right-click or normal click triggers download
-      onClick={handleDownload}
+      // onClick={handleDownload}
     >
       <Card
-        ref={cardRef} // ⚡ ADD
+        // ref={cardRef} // ⚡ ADD
         className="overflow-hidden text-white backdrop-blur-md border-0 shadow-xl transition-transform hover:scale-[1.02] duration-300 cursor-pointer"
         style={{ background: gradient }}
       >
