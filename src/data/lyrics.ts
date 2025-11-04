@@ -31,8 +31,48 @@ export const lyrics: LyricItem[] = [
     artist: "Tame Impala",
   },
   {
+    lyric: `If you're a lover, you should know \n The lonely moments just get lonelier \n The longer you're in love than if you were alone`,
+    song: "House of Memories",
+    artist: "Panic! At The Disco",
+  },
+  {
     lyric: `I almost cut a piece of myself for your life \n Guess I was just another pit stop \n 'Til you made up your mind`,
     song: "Call Out My Name",
+    artist: "The Weeknd",
+  },
+  {
+    lyric: `A friend to all is a friend to none \n Chase two girls, lose the one`,
+    song: "cardigan",
+    artist: "Taylor Swift",
+  },
+  {
+    lyric: `I had a marvelous time ruining everything`,
+    song: "the last great american dynasty",
+    artist: "Taylor Swift",
+  },
+  {
+    lyric: `You were my crown`,
+    song: "exile",
+    artist: "Taylor Swift, Bon Iver",
+  },
+  {
+    lyric: `If I'm on fire, you'll be made of ashes too`,
+    song: "my tears ricochet",
+    artist: "Taylor Swift",
+  },
+  {
+    lyric: `We gather stones, never knowing what they'll mean \n Some to throw, some to make a diamond ring`,
+    song: "my tears ricochet",
+    artist: "Taylor Swift",
+  },
+  {
+    lyric: `You had to kill me, but it killed you just the same \nCursing my name, wishing I stayed \nYou turned into your worst fears \n And you're tossing out blame, drunk on this pain \n Crossing out the good years \n And you're cursing my name, wishing I stayed \n Look at how my tears ricochet`,
+    song: "my tears ricochet",
+    artist: "Taylor Swift",
+  },
+  {
+    lyric: `It was like he was never there \n It was like he was gone in thin air`,
+    song: "He Was Never There",
     artist: "The Weeknd",
   },
   {
