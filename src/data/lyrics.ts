@@ -61,6 +61,11 @@ export const lyrics: LyricItem[] = [
     artist: "Taylor Swift",
   },
   {
+    lyric: `What did you think I'd say to that? \n Does a scorpion sting when fighting back? \n They strike to kill and you know I will`,
+    song: "mad woman",
+    artist: "Taylor Swift",
+  },
+  {
     lyric: `We gather stones, never knowing what they'll mean \n Some to throw, some to make a diamond ring`,
     song: "my tears ricochet",
     artist: "Taylor Swift",
