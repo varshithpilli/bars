@@ -16,6 +16,11 @@ export const lyrics: LyricItem[] = [
     artist: "Kendrick Lamar",
   },
   {
+    lyric: `I'll tell you my sins and you can sharpen your knife`,
+    song: "Take Me to Church",
+    artist: "Hozier",
+  },
+  {
     lyric: `If I had her, then you had her, she never mattered`,
     song: "So Be it",
     artist: "Clipse",
