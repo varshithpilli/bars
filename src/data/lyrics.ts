@@ -16,6 +16,11 @@ export const lyrics: LyricItem[] = [
     artist: "Kendrick Lamar",
   },
   {
+    lyric: `Body for Body`,
+    song: "",
+    artist: "Kendrick Lamar",
+  },
+  {
     lyric: `I'll tell you my sins and you can sharpen your knife`,
     song: "Take Me to Church",
     artist: "Hozier",
