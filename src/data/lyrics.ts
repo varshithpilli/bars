@@ -4,6 +4,7 @@ export interface LyricItem {
   artist: string;
 }
 
+
 export const lyrics: LyricItem[] = [
   {
     lyric: `Richard don't make watches for presidents \n Just a million trapped between skeletons`,
