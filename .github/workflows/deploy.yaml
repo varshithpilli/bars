@@ -35,7 +35,6 @@ jobs:
         with:
           path: ./dist
 
-
   deploy:
     name: Deploy
     environment:
