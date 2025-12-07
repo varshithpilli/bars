@@ -13,8 +13,11 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export default function App() {
+  // const shuffledLyrics = lyrics;
+  
+  // Shuffle if you want it.. but remember to comment the line above and then uncommenting the below block
+  // /*
   const [shuffledLyrics, setShuffledLyrics] = useState(lyrics);
-
   useEffect(() => {
     setShuffledLyrics(shuffleArray(lyrics));
   }, []);
@@ -31,7 +34,8 @@ export default function App() {
 
     return () => clearInterval(interval);
   }, []);
-
+  // */
+ 
   return (
     <div className="min-h-screen w-full relative">
       <div

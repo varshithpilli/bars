@@ -1,8 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import ColorThief from "colorthief";
-// ⚡ ADD:
-// import * as htmlToImage from "html-to-image";
 
 interface LyricCardProps {
   lyric: string;
@@ -13,11 +11,8 @@ interface LyricCardProps {
 export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
   const [gradient, setGradient] = useState<string>(
     "linear-gradient(135deg, rgb(31,41,55) 0%, rgb(17,24,39) 100%)"
-  ); // fallback gray-800 gradient
+  );
   const imgRef = useRef<HTMLImageElement | null>(null);
-
-  // ⚡ ADD: ref for the card itself
-  // const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     async function fetchCoverAndExtractColors() {
@@ -27,14 +22,6 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
             song + " " + artist
           )}&entity=song&limit=1`
         );
-        //         const res = await fetch(
-        //   `https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${encodeURIComponent(song + " " + artist)}&entity=song&limit=1`
-        // );
-        // const res = await fetch(
-        //   `https://open.spotify.com/oembed?url=https://open.spotify.com/search/${encodeURIComponent(
-        //     song + " " + artist
-        //   )}`
-        // );
         const data = await res.json();
         if (data.results?.[0]?.artworkUrl100) {
           const coverUrl = data.results[0].artworkUrl100.replace(
@@ -101,37 +88,37 @@ export default function LyricCard({ lyric, song, artist }: LyricCardProps) {
     `${song} ${artist}`
   )}`;
 
-  // ⚡ ADD: function to download as image
-  // const handleDownload = async (e: React.MouseEvent) => {
-  //   e.preventDefault(); // prevent link navigation
-  //   if (!cardRef.current) return;
+  // Download the card on click... remember to uncomment the lines in return
+  /*
+  const handleDownload = async (e: React.MouseEvent) => {
+    e.preventDefault(); // prevent link navigation
+    if (!cardRef.current) return;
 
-  //   try {
-  //     const dataUrl = await htmlToImage.toPng(cardRef.current, {
-  //       quality: 1,
-  //       backgroundColor: "#000",
-  //       pixelRatio: 2,
-  //     });
+    try {
+      const dataUrl = await htmlToImage.toPng(cardRef.current, {
+        quality: 1,
+        backgroundColor: "#000",
+        pixelRatio: 2,
+      });
 
-  //     const link = document.createElement("a");
-  //     link.download = `${song}-${artist}.png`;
-  //     link.href = dataUrl;
-  //     link.click();
-  //   } catch (err) {
-  //     console.error("Failed to export card:", err);
-  //   }
-  // };
-
+      const link = document.createElement("a");
+      link.download = `${song}-${artist}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error("Failed to export card:", err);
+    }
+  };
+  */
   return (
     <a
       href={spotifyUrl}
       target="_blank"
       rel="noopener noreferrer"
-      // ⚡ ADD: Right-click or normal click triggers download
       // onClick={handleDownload}
     >
       <Card
-        // ref={cardRef} // ⚡ ADD
+        // ref={cardRef}
         className="overflow-hidden text-white backdrop-blur-md border-0 shadow-xl transition-transform hover:scale-[1.02] duration-300 cursor-pointer"
         style={{ background: gradient }}
       >
