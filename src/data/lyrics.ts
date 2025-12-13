@@ -12,6 +12,21 @@ export const lyrics: LyricItem[] = [
     artist: "Clipse, Kendrick Lamar",
   },
   {
+    lyric: `Oh, what a handsome gift \n To live in a land of sin`,
+    song: "Dance Now",
+    artist: "JID, Kenny Mason",
+  },
+  {
+    lyric: `We gon' make it to Heaven, high water or Hell`,
+    song: "Community",
+    artist: "JID, Clipse",
+  },
+  {
+    lyric: `Uh-uh, fuck that`,
+    song: "A.D.H.D",
+    artist: "Kendrik Lamar",
+  },
+  {
     lyric: `Bitch, I'm too grown, I don't fight with my fists`,
     song: "Can't Hold Me Down",
     artist: "Kyle Richh, Lil Wayne, Lil Yachty, Pharrell Williams",
